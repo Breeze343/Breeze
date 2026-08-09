@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breeze Building & Maintenance | Professional Building Services</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0f2c59',
+                            blue: '#1e5f8a',
+                            lightBlue: '#3b82f6',
+                            grey: '#4b5563',
+                            lightGrey: '#f3f4f6',
+                            slateBg: '#e5e7eb',
+                            accent: '#2563eb'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Font Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-800 antialiased selection:bg-brand-blue selection:text-white">
+
+    <!-- TOP BAR -->
+    <div class="bg-brand-navy text-white text-xs sm:text-sm py-2 px-4 border-b border-blue-900/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-6">
+                <a href="tel:07561566380" class="hover:text-blue-300 transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-blue-400"></i> <span>07561566380</span>
+                </a>
+                <a href="mailto:info@breezebuilding.co.uk" class="hover:text-blue-300 transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-envelope text-blue-400"></i> <span>info@breezebuildingandmaintenance.com</span>
+                </a>
+            </div>
+            <div class="flex items-center space-x-4 text-xs">
+                <span class="flex items-center gap-1 text-emerald-400 font-medium">
+                    <i class="fa-solid fa-circle-check"></i> Fully Insured & Guaranteed
+                </span>
+                <span class="text-gray-400">|</span>
+                <span>Mon - Fri: 8:00 AM - 6:00 PM</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- BRAND LOGO (Updated to match uploaded logo image) -->
+                <a href="#home" class="flex items-center gap-3 group py-2">
+                    <div class="relative h-12 flex items-center justify-center shrink-0">
+                        <svg class="h-12 w-auto" viewBox="0 0 210 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Back Blue Roof Peak -->
+                            <path d="M15 60 L60 22 L100 56" stroke="#1b588c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <!-- Main Blue Roof Peak -->
+                            <path d="M48 38 L90 8 L130 42" stroke="#1b588c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <!-- Chimney on Main Roof -->
+                            <path d="M122 24 V10 H132 V30" stroke="#576371" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="#576371"/>
+                            <!-- Front Slate Grey Roof Structure -->
+                            <path d="M82 62 L132 20 L182 62" stroke="#576371" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M68 62 H196" stroke="#576371" stroke-width="5" stroke-linecap="round"/>
+                            <!-- Window Grid (4 panes) in Front House -->
+                            <rect x="120" y="38" width="22" height="18" stroke="#576371" stroke-width="2.5" fill="#ffffff"/>
+                            <line x1="131" y1="38" x2="131" y2="56" stroke="#576371" stroke-width="2"/>
+                            <line x1="120" y1="47" x2="142" y2="47" stroke="#576371" stroke-width="2"/>
+                            <!-- Bottom Wave Swooshes -->
+                            <!-- Upper Blue Swoosh -->
+                            <path d="M10 82 C 65 68, 130 96, 198 78" stroke="#1b588c" stroke-width="6" stroke-linecap="round"/>
+                            <!-- Lower Slate Grey Swoosh -->
+                            <path d="M18 96 C 70 84, 125 106, 186 92" stroke="#576371" stroke-width="5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <span class="text-2xl sm:text-3xl font-black tracking-[0.2em] text-[#0b2341] leading-none font-sans">BREEZE</span>
+                        <span class="text-[9px] sm:text-[11px] font-bold tracking-[0.18em] text-[#1b588c] uppercase mt-1">Building and Maintenance</span>
+                    </div>
+                </a>
+
+                <!-- DESKTOP NAV LINKS -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-slate-700 hover:text-brand-blue font-semibold transition-colors py-2">Home</a>
+                    <a href="#about" class="text-slate-700 hover:text-brand-blue font-semibold transition-colors py-2">About Us</a>
+                    <a href="#services" class="text-slate-700 hover:text-brand-blue font-semibold transition-colors py-2">Services</a>
+                    <a href="#gallery" class="text-slate-700 hover:text-brand-blue font-semibold transition-colors py-2">Gallery</a>
+                    <a href="#contact" class="text-slate-700 hover:text-brand-blue font-semibold transition-colors py-2">Contact Us</a>
+                </div>
+
+                <!-- CTA BUTTON -->
+                <div class="hidden md:block">
+                    <button onclick="openQuoteModal()" class="bg-brand-blue hover:bg-brand-navy text-white px-5 py-2.5 rounded-lg font-semibold shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2">
+                        <i class="fa-solid fa-calculator text-blue-200"></i> Get a Free Quote
+                    </button>
+                </div>
+
+                <!-- MOBILE MENU BUTTON -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="text-slate-700 p-2 rounded-md hover:bg-slate-100">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MOBILE DROPDOWN -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" onclick="toggleMobileMenu()" class="block text-slate-800 font-medium py-2 hover:text-brand-blue">Home</a>
+            <a href="#about" onclick="toggleMobileMenu()" class="block text-slate-800 font-medium py-2 hover:text-brand-blue">About Us</a>
+            <a href="#services" onclick="toggleMobileMenu()" class="block text-slate-800 font-medium py-2 hover:text-brand-blue">Services</a>
+            <a href="#gallery" onclick="toggleMobileMenu()" class="block text-slate-800 font-medium py-2 hover:text-brand-blue">Gallery</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block text-slate-800 font-medium py-2 hover:text-brand-blue">Contact Us</a>
+            <button onclick="toggleMobileMenu(); openQuoteModal();" class="w-full bg-brand-blue text-white py-3 rounded-lg font-semibold shadow text-center">
+                Get a Free Quote
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative bg-slate-900 text-white overflow-hidden py-20 lg:py-28">
+        <!-- Background Overlay Image -->
+        <div class="absolute inset-0 z-0 opacity-25 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1541888081622-c423405367be?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-blue-950/80"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-300 text-xs sm:text-sm font-medium">
+                        <i class="fa-solid fa-shield-halved text-blue-400"></i> Trusted Domestic & Commercial Specialists
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Quality Craftsmanship, <span class="text-blue-400">Driven by Reliability.</span>
+                    </h1>
+                    
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        From complete home extensions and roof repairs to routine property maintenance. Breeze Building & Maintenance delivers exceptional quality, on-time completion, and transparent pricing.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <button onclick="openQuoteModal()" class="w-full sm:w-auto bg-brand-blue hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-blue-500/25 transition-all flex items-center justify-center gap-3">
+                            <span>Request Free Estimate</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                        <a href="#gallery" class="w-full sm:w-auto border border-slate-600 hover:border-slate-300 bg-slate-800/60 hover:bg-slate-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all text-center">
+                            Explore Recent Work
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0 text-center">
+                        <div>
+                            <p class="text-2xl font-bold text-white">15+</p>
+                            <p class="text-xs text-slate-400">Years Experience</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">100%</p>
+                            <p class="text-xs text-slate-400">Satisfaction</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">5★</p>
+                            <p class="text-xs text-slate-400">Rated Team</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Inquiry Form Card -->
+                <div class="lg:col-span-5">
+                    <div class="glass-card rounded-2xl p-6 sm:p-8 text-slate-800 shadow-2xl border border-white/20">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center text-brand-blue">
+                                <i class="fa-solid fa-hard-hat text-xl"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-xl font-bold text-slate-900">Get a Fast Response</h2>
+                                <p class="text-xs text-slate-500">Fill in your details for a quick quote</p>
+                            </div>
+                        </div>
+
+                        <form id="heroQuickForm" onsubmit="handleQuickSubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Your Name</label>
+                                <input type="text" required placeholder="John Smith" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none text-sm bg-slate-50">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Phone Number</label>
+                                <input type="tel" required placeholder="07123 456789" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none text-sm bg-slate-50">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Service Required</label>
+                                <select required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none text-sm bg-slate-50">
+                                    <option value="">Select a service...</option>
+                                    <option>Property Maintenance & Repairs</option>
+                                    <option>Home Extension & Alterations</option>
+                                    <option>Roofing & Guttering</option>
+                                    <option>Kitchen & Bathroom Renovation</option>
+                                    <option>Carpentry & Joinery</option>
+                                    <option>Painting & Decorating</option>
+                                    <option>Other / General Inquiry</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Project Brief</label>
+                                <textarea rows="2" placeholder="Tell us briefly about the job..." class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none text-sm bg-slate-50 resize-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-brand-navy hover:bg-slate-900 text-white font-bold py-3.5 rounded-lg shadow transition-colors flex justify-center items-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i> Send Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Left Image Composition -->
+                <div class="relative">
+                    <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-100">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80" alt="Breeze Building Construction Site" class="w-full h-[420px] object-cover">
+                    </div>
+                    <!-- Secondary Floating Badge -->
+                    <div class="absolute -bottom-6 -right-6 z-20 bg-brand-navy text-white p-6 rounded-2xl shadow-xl border-2 border-white max-w-xs hidden sm:block">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-300">
+                                <i class="fa-solid fa-award text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-lg font-bold">Guaranteed</p>
+                                <p class="text-xs text-slate-300">High Standard Workmanship on Every Job</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="space-y-6">
+                    <div class="inline-block px-3 py-1 bg-slate-100 border border-slate-300 text-brand-navy text-xs font-bold uppercase tracking-wider rounded-md">
+                        About Breeze Building & Maintenance
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                        Your Trusted Local Building & Maintenance Partner
+                    </h2>
+
+                    <p class="text-slate-600 leading-relaxed">
+                        At <strong class="text-slate-900">Breeze Building and Maintenance</strong>, we believe every project—big or small—deserves meticulous care, clear communication, and flawless execution. Based locally, we serve residential home owners and commercial clients with a complete suite of building solutions.
+                    </p>
+
+                    <p class="text-slate-600 leading-relaxed">
+                        From minor emergency repairs to full scale refurbishments, our experienced team works with precision, leaving your site tidy, safe, and built to last.
+                    </p>
+
+                    <!-- Key Values Grid -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start gap-3 p-3 rounded-lg bg-slate-50 border border-slate-200/80">
+                            <i class="fa-solid fa-check-circle text-brand-blue text-xl mt-0.5"></i>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-sm">Transparent Quotes</h3>
+                                <p class="text-xs text-slate-500">No hidden fees or unexpected costs.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 rounded-lg bg-slate-50 border border-slate-200/80">
+                            <i class="fa-solid fa-check-circle text-brand-blue text-xl mt-0.5"></i>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-sm">Skilled Craftsmen</h3>
+                                <p class="text-xs text-slate-500">Fully trained and certified builders.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 rounded-lg bg-slate-50 border border-slate-200/80">
+                            <i class="fa-solid fa-check-circle text-brand-blue text-xl mt-0.5"></i>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-sm">Clean & Respectful</h3>
+                                <p class="text-xs text-slate-500">We treat your property like our own.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 rounded-lg bg-slate-50 border border-slate-200/80">
+                            <i class="fa-solid fa-check-circle text-brand-blue text-xl mt-0.5"></i>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-sm">Fully Insured</h3>
+                                <p class="text-xs text-slate-500">Comprehensive public liability cover.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex items-center gap-6">
+                        <a href="#contact" class="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-navy text-white font-bold px-6 py-3 rounded-lg shadow transition-colors">
+                            <span>Get in Touch</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <div class="flex items-center gap-2 text-slate-700 text-sm font-semibold">
+                            <i class="fa-solid fa-phone text-brand-blue"></i> Direct Line: 07561 566380
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-20 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3 py-1 bg-blue-100 text-brand-navy text-xs font-bold uppercase tracking-wider rounded-md">What We Do</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Our Core Services</h2>
+                <p class="text-slate-600 mt-3">We handle all aspects of domestic and commercial property work with expertise and diligence.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-xl transition-all border border-slate-200 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Property Maintenance</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Scheduled and reactive maintenance for homes, landlords, and commercial premises. Plumbing, joinery, brickwork repairs, and general fixes.
+                        </p>
+                    </div>
+                    <button onclick="openQuoteModal('Property Maintenance')" class="text-brand-blue font-bold text-sm inline-flex items-center gap-2 hover:text-brand-navy">
+                        Request Quote <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-xl transition-all border border-slate-200 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-hammer"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Extensions & Alterations</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Expand your living space with expertly managed single/double story house extensions, garage conversions, and internal wall removals.
+                        </p>
+                    </div>
+                    <button onclick="openQuoteModal('Extensions & Alterations')" class="text-brand-blue font-bold text-sm inline-flex items-center gap-2 hover:text-brand-navy">
+                        Request Quote <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-xl transition-all border border-slate-200 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-border-all"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Roofing & Guttering</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Roof repairs, slate & tile replacement, flat roof installations (EPDM/Felt), fascia boards, and complete gutter clearing and repair.
+                        </p>
+                    </div>
+                    <button onclick="openQuoteModal('Roofing & Guttering')" class="text-brand-blue font-bold text-sm inline-flex items-center gap-2 hover:text-brand-navy">
+                        Request Quote <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-xl transition-all border border-slate-200 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-bath"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Kitchens & Bathrooms</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Full refurbishment from design to installation. Tiling, plumbing, electrical installation, cabinetry, and bespoke finishes.
+                        </p>
+                    </div>
+                    <button onclick="openQuoteModal('Kitchens & Bathrooms')" class="text-brand-blue font-bold text-sm inline-flex items-center gap-2 hover:text-brand-navy">
+                        Request Quote <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-xl transition-all border border-slate-200 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-paint-roller"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Painting & Decorating</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Interior and exterior painting services using high grade, durable weather-resistant paints with immaculate surface preparation.
+                        </p>
+                    </div>
+                    <button onclick="openQuoteModal('Painting & Decorating')" class="text-brand-blue font-bold text-sm inline-flex items-center gap-2 hover:text-brand-navy">
+                        Request Quote <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-xl transition-all border border-slate-200 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-tree"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Patios & Exterior Work</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Paving, stone patio installation, garden walling, fencing, pressure washing, and structural landscaping.
+                        </p>
+                    </div>
+                    <button onclick="openQuoteModal('Patios & Exterior Work')" class="text-brand-blue font-bold text-sm inline-flex items-center gap-2 hover:text-brand-navy">
+                        Request Quote <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION WITH EASY UPLOADER -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <span class="px-3 py-1 bg-slate-100 text-brand-navy text-xs font-bold uppercase tracking-wider rounded-md">Project Showcase</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Our Recent Work</h2>
+                    <p class="text-slate-600 mt-2">Take a look through our portfolio of completed building and maintenance projects.</p>
+                </div>
+
+                <!-- Easy Upload Trigger Button -->
+                <div>
+                    <button onclick="openUploadModal()" class="w-full sm:w-auto bg-slate-900 hover:bg-brand-blue text-white px-5 py-3 rounded-xl font-semibold shadow-md transition-all flex items-center justify-center gap-2 text-sm border border-slate-800">
+                        <i class="fa-solid fa-cloud-arrow-up text-blue-400"></i>
+                        <span>Upload New Project Photo</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Gallery Controls & Category Filter Bar -->
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-8 bg-slate-50 p-3 rounded-xl border border-slate-200">
+                <div class="flex flex-wrap gap-2" id="categoryFilters">
+                    <button onclick="filterGallery('all')" class="filter-btn active bg-brand-blue text-white px-4 py-2 rounded-lg text-xs font-semibold transition-all">All Projects</button>
+                    <button onclick="filterGallery('Extensions')" class="filter-btn bg-white hover:bg-slate-200 text-slate-700 px-4 py-2 rounded-lg text-xs font-semibold transition-all border border-slate-200">Extensions</button>
+                    <button onclick="filterGallery('Roofing')" class="filter-btn bg-white hover:bg-slate-200 text-slate-700 px-4 py-2 rounded-lg text-xs font-semibold transition-all border border-slate-200">Roofing</button>
+                    <button onclick="filterGallery('Renovation')" class="filter-btn bg-white hover:bg-slate-200 text-slate-700 px-4 py-2 rounded-lg text-xs font-semibold transition-all border border-slate-200">Renovation</button>
+                    <button onclick="filterGallery('Maintenance')" class="filter-btn bg-white hover:bg-slate-200 text-slate-700 px-4 py-2 rounded-lg text-xs font-semibold transition-all border border-slate-200">Maintenance</button>
+                </div>
+
+                <div class="text-xs text-slate-500 flex items-center gap-2">
+                    <span id="imageCounter">Showing 6 projects</span>
+                    <button onclick="resetGallery()" class="text-brand-blue underline text-xs font-semibold hover:text-brand-navy ml-2" title="Reset gallery to default photos">Reset Defaults</button>
+                </div>
+            </div>
+
+            <!-- Dynamic Gallery Grid -->
+            <div id="galleryGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Cards rendered dynamically via JavaScript -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- UPLOAD PHOTO MODAL (Easy Client Upload) -->
+    <div id="uploadModal" class="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-200 animate-fadeIn">
+            
+            <button onclick="closeUploadModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 w-8 h-8 flex items-center justify-center rounded-full hover:bg-slate-100">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-12 h-12 bg-blue-50 text-brand-blue rounded-xl flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900">Upload Project Photo</h3>
+                    <p class="text-xs text-slate-500">Add a picture to your live gallery in seconds.</p>
+                </div>
+            </div>
+
+            <form id="uploadForm" onsubmit="handlePhotoUpload(event)" class="space-y-4">
+                
+                <!-- Tab toggle for File vs URL -->
+                <div class="flex rounded-lg bg-slate-100 p-1 mb-4">
+                    <button type="button" id="tabFileBtn" onclick="switchUploadTab('file')" class="flex-1 py-1.5 text-xs font-bold rounded-md bg-white shadow text-brand-navy">
+                        Choose File from Device
+                    </button>
+                    <button type="button" id="tabUrlBtn" onclick="switchUploadTab('url')" class="flex-1 py-1.5 text-xs font-bold rounded-md text-slate-600">
+                        Paste Image Web URL
+                    </button>
+                </div>
+
+                <!-- File Input Field -->
+                <div id="fileInputContainer" class="block">
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Select Image File</label>
+                    <div class="border-2 border-dashed border-slate-300 rounded-xl p-6 text-center hover:border-brand-blue transition-colors bg-slate-50 relative cursor-pointer">
+                        <input type="file" id="imageFileInput" accept="image/*" onchange="previewSelectedFile(event)" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer">
+                        <div id="fileUploadPreviewArea">
+                            <i class="fa-solid fa-image text-3xl text-slate-400 mb-2"></i>
+                            <p class="text-sm font-semibold text-slate-700">Click or drag image here</p>
+                            <p class="text-xs text-slate-400 mt-1">PNG, JPG, WEBP up to 10MB</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web URL Input Field -->
+                <div id="urlInputContainer" class="hidden">
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Image Web Address (URL)</label>
+                    <input type="url" id="imageUrlInput" placeholder="https://example.com/my-building-photo.jpg" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue outline-none text-sm bg-slate-50">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Project Title</label>
+                    <input type="text" id="imageTitleInput" required placeholder="e.g. Modern Kitchen Fitting in Essex" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue outline-none text-sm bg-slate-50">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Category</label>
+                    <select id="imageCategoryInput" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue outline-none text-sm bg-slate-50">
+                        <option value="Extensions">Extensions</option>
+                        <option value="Roofing">Roofing</option>
+                        <option value="Renovation">Renovation</option>
+                        <option value="Maintenance">Maintenance</option>
+                    </select>
+                </div>
+
+                <div class="pt-2 flex justify-end gap-3">
+                    <button type="button" onclick="closeUploadModal()" class="px-5 py-2.5 rounded-lg border border-slate-300 text-slate-700 font-semibold text-sm hover:bg-slate-100">
+                        Cancel
+                    </button>
+                    <button type="submit" class="px-6 py-2.5 rounded-lg bg-brand-blue hover:bg-brand-navy text-white font-bold text-sm shadow">
+                        Add to Gallery
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightboxModal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4" onclick="closeLightbox()">
+        <div class="relative max-w-4xl w-full" onclick="event.stopPropagation()">
+            <button onclick="closeLightbox()" class="absolute -top-12 right-0 text-white hover:text-slate-300 text-2xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="lightboxImage" src="" alt="Enlarged view" class="w-full max-h-[80vh] object-contain rounded-lg shadow-2xl border border-slate-700">
+            <div class="mt-4 text-center">
+                <h4 id="lightboxTitle" class="text-white font-bold text-lg"></h4>
+                <p id="lightboxCategory" class="text-xs text-blue-400 uppercase tracking-widest mt-1"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3 py-1 bg-blue-100 text-brand-navy text-xs font-bold uppercase tracking-wider rounded-md">Contact Us</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Let's Discuss Your Project</h2>
+                <p class="text-slate-600 mt-2">Get in touch for advice, site visits, or a free detailed estimate.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Contact Info Column -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+                        <h3 class="text-xl font-bold text-slate-900 border-b border-slate-100 pb-4">Direct Contact Details</h3>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand-blue flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold uppercase text-slate-400">Call Us Directly</p>
+                                <a href="tel:07561566380" class="text-slate-900 font-bold hover:text-brand-blue text-base">07561566380</a>
+                                <p class="text-xs text-slate-500">Available Mon-Sat 8am - 6pm</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-2">
+                            <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand-blue flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold uppercase text-slate-400">Email Inquiries</p>
+                                <a href="mailto:info@breezebuildingandmaintenance.com" class="text-slate-900 font-bold hover:text-brand-blue text-base">info@breezebuildingandmaintenance.com</a>
+                                <p class="text-xs text-slate-500">We respond within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand-blue flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold uppercase text-slate-400">Coverage Area</p>
+                                <p class="text-slate-900 font-semibold text-sm">Essex, London & Surrounding Home Counties</p>
+                                <p class="text-xs text-slate-500">Mobile team available for site visits</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business Hours Card -->
+                    <div class="bg-brand-navy text-white rounded-2xl p-6 sm:p-8 shadow-sm">
+                        <h3 class="text-lg font-bold mb-4 flex items-center gap-2">
+                            <i class="fa-regular fa-clock text-blue-400"></i> Business Hours
+                        </h3>
+                        <div class="space-y-2 text-sm text-slate-300">
+                            <div class="flex justify-between py-1 border-b border-blue-900/50">
+                                <span>Monday - Friday</span>
+                                <span class="font-bold text-white">8:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="flex justify-between py-1 border-b border-blue-900/50">
+                                <span>Saturday</span>
+                                <span class="text-slate-400 italic">Emergency Calls Only</span>
+                            </div>
+                            <div class="flex justify-between py-1">
+                                <span>Sunday</span>
+                                <span class="text-slate-400 italic">Emergency Calls Only</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="lg:col-span-7 bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Send Us a Message</h3>
+                    <p class="text-xs text-slate-500 mb-6">Fill in the form below and one of our team members will get back to you promptly.</p>
+
+                    <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Full Name *</label>
+                                <input type="text" required placeholder="John Smith" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue outline-none text-sm bg-slate-50">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Phone Number *</label>
+                                <input type="tel" required placeholder="07123 456789" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue outline-none text-sm bg-slate-50">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Email Address</label>
+                                <input type="email" placeholder="john@example.com" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue outline-none text-sm bg-slate-50">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Postcode / Location</label>
+                                <input type="text" placeholder="e.g. RM1 2BC" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue outline-none text-sm bg-slate-50">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Message / Job Description *</label>
+                            <textarea rows="4" required placeholder="Please describe the work required, dimensions or timing..." class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue outline-none text-sm bg-slate-50 resize-y"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-blue hover:bg-brand-navy text-white font-bold py-4 rounded-xl shadow-lg transition-all flex justify-center items-center gap-2 text-base">
+                            <i class="fa-solid fa-paper-plane"></i> Submit Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FREE QUOTE MODAL -->
+    <div id="quoteModal" class="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-200">
+            <button onclick="closeQuoteModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 w-8 h-8 flex items-center justify-center rounded-full hover:bg-slate-100">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-12 h-12 bg-blue-50 text-brand-blue rounded-xl flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-calculator"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900">Request a Free Quote</h3>
+                    <p class="text-xs text-slate-500">No obligation estimate for your property.</p>
+                </div>
+            </div>
+
+            <form onsubmit="handleQuoteSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Name</label>
+                    <input type="text" required placeholder="Your full name" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue outline-none text-sm bg-slate-50">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Phone Number</label>
+                    <input type="tel" required placeholder="Phone number" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue outline-none text-sm bg-slate-50">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Selected Service</label>
+                    <input type="text" id="quoteModalService" readonly class="w-full px-4 py-2.5 rounded-lg border border-slate-200 bg-slate-100 text-slate-700 font-semibold text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Details</label>
+                    <textarea rows="3" placeholder="Tell us about your requirements..." class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-blue outline-none text-sm bg-slate-50 resize-none"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-brand-blue hover:bg-brand-navy text-white font-bold py-3.5 rounded-lg shadow transition-colors">
+                    Submit Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3 border border-slate-700">
+        <i id="toastIcon" class="fa-solid fa-circle-check text-emerald-400 text-lg"></i>
+        <span id="toastMessage" class="text-sm font-medium">Action completed successfully!</span>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-white border-t border-slate-900 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="space-y-4">
+                    <a href="#home" class="flex items-center gap-3">
+                        <svg class="h-10 w-auto" viewBox="0 0 210 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 60 L60 22 L100 56" stroke="#3b82f6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M48 38 L90 8 L130 42" stroke="#3b82f6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M122 24 V10 H132 V30" stroke="#94a3b8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="#94a3b8"/>
+                            <path d="M82 62 L132 20 L182 62" stroke="#94a3b8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M68 62 H196" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/>
+                            <rect x="120" y="38" width="22" height="18" stroke="#94a3b8" stroke-width="2.5" fill="#0f172a"/>
+                            <line x1="131" y1="38" x2="131" y2="56" stroke="#94a3b8" stroke-width="2"/>
+                            <line x1="120" y1="47" x2="142" y2="47" stroke="#94a3b8" stroke-width="2"/>
+                            <path d="M10 82 C 65 68, 130 96, 198 78" stroke="#3b82f6" stroke-width="6" stroke-linecap="round"/>
+                            <path d="M18 96 C 70 84, 125 106, 186 92" stroke="#94a3b8" stroke-width="5" stroke-linecap="round"/>
+                        </svg>
+                        <div>
+                            <span class="text-xl font-black tracking-[0.2em] text-white block leading-none font-sans">BREEZE</span>
+                            <span class="text-[9px] font-bold tracking-[0.15em] text-blue-400 uppercase mt-0.5 block">Building & Maintenance</span>
+                        </div>
+                    </a>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        High quality construction, extensions, roofing, and general maintenance services across Essex and London.
+                    </p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-slate-300 mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><a href="#home" class="hover:text-blue-400 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-blue-400 transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-blue-400 transition-colors">Our Services</a></li>
+                        <li><a href="#gallery" class="hover:text-blue-400 transition-colors">Project Gallery</a></li>
+                        <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Services -->
+                <div>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-slate-300 mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li><span>Property Maintenance</span></li>
+                        <li><span>Extensions & Alterations</span></li>
+                        <li><span>Roofing & Guttering</span></li>
+                        <li><span>Kitchens & Bathrooms</span></li>
+                        <li><span>Painting & Decorating</span></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Summary -->
+                <div>
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-slate-300 mb-4">Get In Touch</h4>
+                    <p class="text-sm text-slate-400 mb-2"><i class="fa-solid fa-phone text-blue-400 mr-2"></i> 07561566380</p>
+                    <p class="text-sm text-slate-400 mb-2"><i class="fa-solid fa-envelope text-blue-400 mr-2"></i> info@breezebuildingandmaintenance.com</p>
+                    <p class="text-xs text-slate-500 mt-4">Certified & Fully Insured Professional Contractors.</p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 Breeze Building and Maintenance. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-400">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT LOGIC -->
+    <script>
+
+        // Default Initial Gallery Dataset
+        const DEFAULT_GALLERY = [
+            {
+                id: 'def-1',
+                title: 'Full Rear House Extension & Patio',
+                category: 'Extensions',
+                image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+                isDefault: true
+            },
+            {
+                id: 'def-2',
+                title: 'Slate Tile Roof Repair & Guttering',
+                category: 'Roofing',
+                image: 'https://images.unsplash.com/photo-1541888081622-c423405367be?auto=format&fit=crop&w=800&q=80',
+                isDefault: true
+            },
+            {
+                id: 'def-3',
+                title: 'Modern Bespoke Kitchen Fitout',
+                category: 'Renovation',
+                image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80',
+                isDefault: true
+            },
+            {
+                id: 'def-4',
+                title: 'Commercial Property Exterior Maintenance',
+                category: 'Maintenance',
+                image: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=800&q=80',
+                isDefault: true
+            },
+            {
+                id: 'def-5',
+                title: 'Luxury Bathroom Refurbishment',
+                category: 'Renovation',
+                image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80',
+                isDefault: true
+            },
+            {
+                id: 'def-6',
+                title: 'Structural Steelwork & Brickwork',
+                category: 'Extensions',
+                image: 'https://images.unsplash.com/photo-1504307651254-35680f356f12?auto=format&fit=crop&w=800&q=80',
+                isDefault: true
+            }
+        ];
+
+        // State Variables
+        let galleryItems = [];
+        let currentFilter = 'all';
+        let uploadTab = 'file';
+        let filePreviewDataUrl = null;
+
+        // Initialize App
+        window.addEventListener('DOMContentLoaded', () => {
+            loadGalleryFromStorage();
+            renderGallery();
+        });
+
+        // Load Gallery from LocalStorage or Defaults
+        function loadGalleryFromStorage() {
+            try {
+                const stored = localStorage.getItem('breeze_gallery_items');
+                if (stored) {
+                    galleryItems = JSON.parse(stored);
+                } else {
+                    galleryItems = [...DEFAULT_GALLERY];
+                    saveGalleryToStorage();
+                }
+            } catch (e) {
+                galleryItems = [...DEFAULT_GALLERY];
+            }
+        }
+
+        function saveGalleryToStorage() {
+            try {
+                localStorage.setItem('breeze_gallery_items', JSON.stringify(galleryItems));
+            } catch (e) {
+                console.error('Storage quota exceeded', e);
+            }
+        }
+
+        function resetGallery() {
+            galleryItems = [...DEFAULT_GALLERY];
+            saveGalleryToStorage();
+            renderGallery();
+            showToast('Gallery reset to default items');
+        }
+
+        // Render Gallery Grid
+        function renderGallery() {
+            const grid = document.getElementById('galleryGrid');
+            const counter = document.getElementById('imageCounter');
+            grid.innerHTML = '';
+
+            const filtered = currentFilter === 'all' 
+                ? galleryItems 
+                : galleryItems.filter(item => item.category === currentFilter);
+
+            counter.textContent = `Showing ${filtered.length} project${filtered.length === 1 ? '' : 's'}`;
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full py-12 text-center text-slate-400">
+                        <i class="fa-solid fa-folder-open text-4xl mb-3"></i>
+                        <p class="font-semibold text-slate-600">No photos found in this category.</p>
+                        <button onclick="openUploadModal()" class="mt-3 text-sm text-brand-blue font-bold underline">Upload one now</button>
+                    </div>
+                `;
+                return;
+            }
+
+            filtered.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-200 flex flex-col justify-between relative';
+                
+                card.innerHTML = `
+                    <div class="relative h-60 overflow-hidden bg-slate-100 cursor-pointer" onclick="openLightbox('${item.image}', '${escapeQuotes(item.title)}', '${item.category}')">
+                        <img src="${item.image}" alt="${escapeQuotes(item.title)}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1541888081622-c423405367be?auto=format&fit=crop&w=800&q=80'">
+                        <div class="absolute inset-0 bg-slate-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="bg-white/90 text-slate-900 px-3 py-1.5 rounded-full text-xs font-bold shadow flex items-center gap-1.5">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i> View
+                            </span>
+                        </div>
+                        <span class="absolute top-3 left-3 bg-brand-navy/90 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md shadow">
+                            ${item.category}
+                        </span>
+                    </div>
+
+                    <div class="p-4 flex justify-between items-center gap-2 bg-white">
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-sm line-clamp-1">${item.title}</h3>
+                            <p class="text-[11px] text-slate-400">Breeze Building & Maintenance</p>
+                        </div>
+                        
+                        ${!item.isDefault ? `
+                            <button onclick="deletePhoto('${item.id}')" title="Delete Photo" class="text-slate-400 hover:text-red-600 p-1.5 rounded-lg hover:bg-red-50 transition-colors">
+                                <i class="fa-solid fa-trash-can text-sm"></i>
+                            </button>
+                        ` : ''}
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function escapeQuotes(str) {
+            return str.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+        }
+
+        // Filter Gallery
+        function filterGallery(category) {
+            currentFilter = category;
+            
+            // Update active button state
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-blue', 'text-white', 'active');
+                btn.classList.add('bg-white', 'text-slate-700');
+            });
+
+            event.currentTarget.classList.remove('bg-white', 'text-slate-700');
+            event.currentTarget.classList.add('bg-brand-blue', 'text-white', 'active');
+
+            renderGallery();
+        }
+
+        // Upload Modal Controls
+        function openUploadModal() {
+            document.getElementById('uploadModal').classList.remove('hidden');
+        }
+
+        function closeUploadModal() {
+            document.getElementById('uploadModal').classList.add('hidden');
+            document.getElementById('uploadForm').reset();
+            filePreviewDataUrl = null;
+            resetFilePreviewArea();
+        }
+
+        function switchUploadTab(tab) {
+            uploadTab = tab;
+            const fileBtn = document.getElementById('tabFileBtn');
+            const urlBtn = document.getElementById('tabUrlBtn');
+            const fileContainer = document.getElementById('fileInputContainer');
+            const urlContainer = document.getElementById('urlInputContainer');
+
+            if (tab === 'file') {
+                fileBtn.className = "flex-1 py-1.5 text-xs font-bold rounded-md bg-white shadow text-brand-navy";
+                urlBtn.className = "flex-1 py-1.5 text-xs font-bold rounded-md text-slate-600";
+                fileContainer.classList.remove('hidden');
+                urlContainer.classList.add('hidden');
+            } else {
+                urlBtn.className = "flex-1 py-1.5 text-xs font-bold rounded-md bg-white shadow text-brand-navy";
+                fileBtn.className = "flex-1 py-1.5 text-xs font-bold rounded-md text-slate-600";
+                urlContainer.classList.remove('hidden');
+                fileContainer.classList.add('hidden');
+            }
+        }
+
+        // Preview File Uploaded from Local Device
+        function previewSelectedFile(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            if (file.size > 10 * 1024 * 1024) {
+                showToast('File size must be under 10MB', 'error');
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                filePreviewDataUrl = event.target.result;
+                const previewArea = document.getElementById('fileUploadPreviewArea');
+                previewArea.innerHTML = `
+                    <img src="${filePreviewDataUrl}" class="h-28 mx-auto object-cover rounded-lg shadow mb-2">
+                    <p class="text-xs font-semibold text-emerald-600"><i class="fa-solid fa-check-circle"></i> ${file.name}</p>
+                `;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function resetFilePreviewArea() {
+            const previewArea = document.getElementById('fileUploadPreviewArea');
+            if (previewArea) {
+                previewArea.innerHTML = `
+                    <i class="fa-solid fa-image text-3xl text-slate-400 mb-2"></i>
+                    <p class="text-sm font-semibold text-slate-700">Click or drag image here</p>
+                    <p class="text-xs text-slate-400 mt-1">PNG, JPG, WEBP up to 10MB</p>
+                `;
+            }
+        }
+
+        // Handle Photo Upload Submit
+        function handlePhotoUpload(e) {
+            e.preventDefault();
+            
+            const title = document.getElementById('imageTitleInput').value;
+            const category = document.getElementById('imageCategoryInput').value;
+            let imageUrl = '';
+
+            if (uploadTab === 'file') {
+                if (!filePreviewDataUrl) {
+                    showToast('Please select an image file first', 'error');
+                    return;
+                }
+                imageUrl = filePreviewDataUrl;
+            } else {
+                const urlVal = document.getElementById('imageUrlInput').value;
+                if (!urlVal) {
+                    showToast('Please enter an image URL', 'error');
+                    return;
+                }
+                imageUrl = urlVal;
+            }
+
+            const newItem = {
+                id: 'custom-' + Date.now(),
+                title: title,
+                category: category,
+                image: imageUrl,
+                isDefault: false
+            };
+
+            galleryItems.unshift(newItem);
+            saveGalleryToStorage();
+            renderGallery();
+            closeUploadModal();
+            showToast('New project photo added to gallery!');
+        }
+
+        // Delete Custom Photo
+        function deletePhoto(id) {
+            galleryItems = galleryItems.filter(item => item.id !== id);
+            saveGalleryToStorage();
+            renderGallery();
+            showToast('Photo removed from gallery');
+        }
+
+        // Lightbox Functions
+        function openLightbox(image, title, category) {
+            document.getElementById('lightboxImage').src = image;
+            document.getElementById('lightboxTitle').textContent = title;
+            document.getElementById('lightboxCategory').textContent = category;
+            document.getElementById('lightboxModal').classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightboxModal').classList.add('hidden');
+        }
+
+        // Quote Modal Functions
+        function openQuoteModal(serviceName = 'General Inquiry') {
+            document.getElementById('quoteModalService').value = serviceName;
+            document.getElementById('quoteModal').classList.remove('hidden');
+        }
+
+        function closeQuoteModal() {
+            document.getElementById('quoteModal').classList.add('hidden');
+        }
+
+        // Form Submission Handlers
+        function handleQuickSubmit(e) {
+            e.preventDefault();
+            showToast('Thank you! Quick estimate request received.');
+            e.target.reset();
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            showToast('Message sent! We will contact you shortly.');
+            e.target.reset();
+        }
+
+        function handleQuoteSubmit(e) {
+            e.preventDefault();
+            closeQuoteModal();
+            showToast('Quote request submitted successfully!');
+        }
+
+        // Navigation & Mobile Menu
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Toast Feedback System
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMessage');
+            const toastIcon = document.getElementById('toastIcon');
+
+            toastMsg.textContent = message;
+
+            if (type === 'error') {
+                toastIcon.className = 'fa-solid fa-circle-exclamation text-rose-400 text-lg';
+            } else {
+                toastIcon.className = 'fa-solid fa-circle-check text-emerald-400 text-lg';
+            }
+
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3500);
+        }
+    </script>
+</body>
+</html>
